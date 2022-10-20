@@ -4,6 +4,11 @@ let minutes = document.querySelector("#min");
 let hours = document.querySelector("#hour");
 let stopp = true;
 
+// function t stop
+let fnStop = () => {
+  stopp = true;
+};
+
 // function to start Stopwatch
 const fnstart = () => {
   stopp = false;
@@ -30,7 +35,8 @@ let fnreset = () => {
   minutes.innerHTML = "00";
   hours.innerHTML = "00";
 };
-// function to save data
+// function erase data
 let fnformat = () => {
   display.innerHTML = "";
 };
+
